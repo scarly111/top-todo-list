@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Project Panel -->
+  <div class="panel">
+    <div class="section-title">Projects</div>
+    <div id="project-list">
+      <div class="project-item active">
+        <span>Default</span>
+        <button class="project-delete" title="Delete Project">🗑️</button>
+      </div>
+      <div class="project-item">
+        <span>Work</span>
+        <button class="project-delete" title="Delete Project">🗑️</button>
+      </div>
+    </div>
+    <input type="text" id="new-project-name" placeholder="New Project Name" />
+    <button id="add-project-btn">Add Project</button>
+  </div>
+
+  <!-- Todo Display Panel -->
+  <div class="panel">
+    <div class="section-title">Todos</div>
+    <div id="todo-list">
+      <div class="todo-item" data-priority="high">
+        <div class="todo-header">
+          <div class="todo-check-title">
+            <input type="checkbox" class="todo-complete" />
+            <span class="todo-title">Fix login bug</span>
+          </div>
+          <button class="todo-delete">🗑️</button>
+        </div>
+        <div class="todo-due">Due: 2025-04-20</div>
+        <div class="todo-desc">Make sure login works on mobile devices</div>
+      </div>
+
+      <div class="todo-item" data-priority="medium">
+        <div class="todo-header">
+          <div class="todo-check-title">
+            <input type="checkbox" class="todo-complete" checked />
+            <span class="todo-title">Write docs</span>
+          </div>
+          <button class="todo-delete">🗑️</button>
+        </div>
+        <div class="todo-due">Due: 2025-04-25</div>
+        <div class="todo-desc">Document API usage</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Todo Create Panel -->
+  <div class="panel">
+    <div class="section-title">Add Todo</div>
+    <input type="text" id="todo-title" placeholder="Title" />
+    <input type="text" id="todo-desc" placeholder="Description" />
+    <input type="date" id="todo-date" />
+    <select id="todo-priority">
+      <option value="low">Low</option>
+      <option value="medium" selected>Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button id="add-todo-btn">Add Todo</button>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
