@@ -1,4 +1,4 @@
-function createProject(name) {
+/* function createProject(name) {
     return {
         id: Date.now().toString(),
         name,
@@ -6,4 +6,4 @@ function createProject(name) {
     };
 }
 
-export { createProject };
+export { createProject }; */
