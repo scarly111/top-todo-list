@@ -1,5 +1,5 @@
 // Basic factory function for creating todo
-function createTodo({ title, description, dueDate, priority = 'medium', notes = '', checklist = [] }) {
+/* function createTodo({ title, description, dueDate, priority = 'medium', notes = '', checklist = [] }) {
     return {
         id: Date.now().toString(),
         title,
@@ -14,4 +14,4 @@ function createTodo({ title, description, dueDate, priority = 'medium', notes = 
     };
 }
 
-export default createTodo;
+export default createTodo; */
